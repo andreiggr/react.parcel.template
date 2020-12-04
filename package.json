@@ -1,0 +1,43 @@
+{
+  "name": "react.parcel.template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel serve ./src/apps/index.html",
+    "build": "find ./dist/ -type f ! -iname '*.html' -delete; npx parcel build --public-url ./++resource++react.parcel.template.react/ ./src/apps/*.html",
+    "develop": "find ./dist/ -type f ! -iname '*.html' -delete; NODE_ENV=development npx parcel build --public-url ./++resource++react.parcel.template.react/ ./src/apps/*.html"
+  },
+  "keywords": [],
+  "author": "Andrei Grigore",
+  "license": "GPL",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "ie 11"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "styled-components": "^5.2.1"
+  },
+  "dependencies": {
+    "@parcel/transformer-babel": "^2.0.0-alpha.3",
+    "corejs": "^1.0.0",
+    "react": "^16.14.0",
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7",
+    "styled-components": "^5.2.1",
+    "whatwg-fetch": "^3.5.0"
+  }
+}

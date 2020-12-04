@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.break-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
