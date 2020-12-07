@@ -3,6 +3,8 @@
 React.js with Parcel & other startup utilities(to be updated regularly):
 
 - styled-components
+- redux & mock fetch
+- routes
 - already made building blocks components to start building fast (components/blocks)
 
 ## Installation
